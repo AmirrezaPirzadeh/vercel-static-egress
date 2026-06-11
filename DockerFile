@@ -1,6 +1,6 @@
 FROM node:25-alpine
 WORKDIR /app
 RUN npm install express http-proxy-middleware jsonwebtoken
-COPY proxy.js .
+COPY app.js .
 EXPOSE 8080
 CMD ["node", "app.js"]
