@@ -3,4 +3,4 @@ WORKDIR /app
 RUN npm install express http-proxy-middleware jsonwebtoken
 COPY proxy.js .
 EXPOSE 8080
-CMD ["node", "proxy.js"]
+CMD ["node", "app.js"]
